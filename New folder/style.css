@@ -1,0 +1,118 @@
+/* High-Tech Modern CSS */
+
+/* Background & font */
+body {
+  background: #0e1628;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e4e6eb;
+}
+
+/* Container style */
+.container {
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Heading */
+h2 {
+  color: #00bcd4;
+  text-shadow: 0 0 5px #00bcd4;
+}
+
+/* Inputs and Buttons */
+input.form-control,
+button.btn {
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+input.form-control {
+  background-color: #1a2332;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+input.form-control:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 0 0.2rem rgba(0, 188, 212, 0.25);
+}
+
+/* Buttons */
+button.btn-primary {
+  background-color: #00bcd4;
+  border-color: #00bcd4;
+  transition: 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #00acc1;
+}
+
+button.btn-secondary {
+  background-color: #3f51b5;
+  border-color: #3f51b5;
+}
+
+button.btn-secondary:hover {
+  background-color: #303f9f;
+}
+
+/* Todo Items */
+.list-group-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e4e6eb;
+  border-radius: 12px !important;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+
+
+.list-group-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* Loader */
+#loader {
+  text-align: center;
+  margin-top: 20px;
+  color: #00bcd4;
+}
+.created-date {
+  color: #00ffae; /* neon green-blue */
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+
+/* Pagination */
+.page-link {
+  background-color: #1a2332;
+  border-color: #3f51b5;
+  color: #fff;
+}
+
+.page-item.active .page-link {
+  background-color: #00bcd4;
+  border-color: #00bcd4;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  #addTodoForm .row,
+  .row.g-2 {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
